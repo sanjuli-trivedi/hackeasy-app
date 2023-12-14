@@ -35,7 +35,7 @@ const Home = () => {
     if (filteredSuggestions.length > 0) {
       const selectedMedicine = filteredSuggestions[0]; // Assume the first suggestion is selected
       const medicineId = allMedicineSuggestions.indexOf(selectedMedicine) + 1; // Index starts from 0
-      navigate('/medicine/${medicineId}');
+      navigate(`/medicineDetails/${medicineId}`); // Use backticks and ${} for proper interpolation
     }
   };
 
